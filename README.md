@@ -10,6 +10,8 @@ Pull Request 前請確認以下事項：
 * 標題以「班級座號、學號、姓名」作為開頭
 * 其他說明事項可以在下面補充
 
+[筆記連結](https://hackmd.io/@HYKai129/function-note)
+
 **繳交題目請標註題號**
 
 ## **HW：**
