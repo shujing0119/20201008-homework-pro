@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int main() {
+    string sentence;
+    getline(cin, sentence);
+
+    int place = 0;
+    int index = 0; 
+    for (int i = 0; i < sentence.size(); i++) {
+        if ((sentence[i] >= 0x41 && sentence[i] <= 0x5A) ||
+            (sentence[i] >= 0x61 && sentence[i] <= 0x7A)) {
+                index += 1;
+        }
+        if (index % 2 == 1) {
+            sentence[i] = toupper(sentence[i]);
+        }
+
+        if (index % 2 == 0) {
+            sentence[i] = tolower(sentence[i]);
+        }
+
+        place = 0;
+    }
+
+    cout << sentence;
+}
